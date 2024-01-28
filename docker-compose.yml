@@ -1,0 +1,18 @@
+version: "2.1"
+services:
+  esphome:
+    build: .
+    container_name: esphome
+    privileged: true
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - ESPHOME_DASHBOARD_USE_PING=false #optional
+    volumes:
+      - appdata-volume:/config
+    ports:
+      - 6052:6052
+    restart: unless-stopped
+volumes:
+  appdata-volume:
