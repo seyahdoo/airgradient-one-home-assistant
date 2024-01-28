@@ -1,7 +1,7 @@
 # airgradient-one-home-assistant
 integrates airgradient one to home assistant
 
-Steps
+## Steps
 
 Deploy docker compose and go to web ui
 
