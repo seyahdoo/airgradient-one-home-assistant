@@ -10,7 +10,7 @@
 
 # Reference for substitutions: https://github.com/ajfriesen/ESPHome-AirGradient/blob/main/air-gradient-pro-diy.yaml
 substitutions:
-  devicename: !secret device_name
+  devicename: "airgradient"
   ag_esphome_config_version: 0.1.0
   led_strip_brightness: "25%"
 
